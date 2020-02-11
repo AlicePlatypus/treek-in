@@ -1,0 +1,8 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto__footer {
+    color: $white;
+    @include x-small 
+}
