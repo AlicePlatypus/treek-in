@@ -2,6 +2,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.caracteristicas__titulo {
+    color: $raising-black;
+    text-align: center;
+    @include x-large
+    
+}
+
+
 .card__precio {
     color: $white;
     @include x-large

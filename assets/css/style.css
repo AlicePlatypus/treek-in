@@ -7,6 +7,12 @@ body {
 body {
   font-family: 'Raleway', sans-serif; }
 
+.caracteristicas__titulo {
+  color: #221D23;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700; }
+
 .card__precio {
   color: #FFF;
   font-size: 1.875rem;
@@ -321,6 +327,18 @@ h2 {
     color: #FFF;
     font-size: 17px; }
 
+.caracteristicas__titulo {
+  padding-bottom: 30px; }
+.caracteristicas__imagen {
+  padding-right: 30px;
+  padding-left: 100px; }
+  .caracteristicas__imagen__texto {
+    padding-right: 100px;
+    margin: 20px; }
+
+@media (min-width: 576px) {
+  .caracteristicas__imagen {
+    padding-left: 250px; } }
 .animation-element {
   opacity: 0;
   transition: all 500ms linear;
