@@ -1,8 +1,110 @@
-.precios__fondo {
-    background-image: url(../img/bg-price.png);
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+/*cajas Cartas*/
+.card__imagen{
+    background-image: url(../img/bg-price.svg);
     background-size: cover;
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.card__fondo {
+    background-color: $onyx;
+    margin: 0;
+    padding: 0;
+
+}
+h2 {
+    margin: 0;
+    font-size: x-l;
+    
+}
+
+.card-price{
+    text-align: center;
+    color: $raising-black;
+}
+.card-title{
+    text-align: center;
+    color: $nickel;
+}
+.card__precio{
+    color: $white;
+    text-align: center;
+}
+.card {
+    
+    background: $white;
+    box-shadow: 0 1px 1px $raising-black;
+    flex: 1;
+    margin: 20px 60px;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    width: 300px;
+    
+    // transition: all 0.5s ease-in-out;
+    &.popular {
+        margin-top: -10px;
+        margin-bottom: -10px; 
+        .card-action {
+            button {
+                background-color: $ball-blue;
+                color: $white;
+                font-size: 17px;
+                margin-top: -15px;
+                padding: 15px;
+                height: 80px;
+                &:hover {
+                    background-color: darken($ball-blue,7);
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 8px 20px $raising-black;
+    }
+}
+.card-description {
+   
+    ul {
+        display: block;
+        margin: 20px 0;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+    li {
+        color: $raising-black;
+        font-size: 15px;
+        margin: 0 0 15px;
+    }
+}
+.card-action {
+    
+    button {
+        position: absolute;
+        bottom: 20px;
+        background: transparent;
+        border: 2px solid  $ball-blue;
+        color: $ball-blue;
+        cursor: pointer;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 20px;
+        width: 80%;
+        height: 60px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $ball-blue;
+            box-shadow: 0 2px 4px darken($ball-blue,20);
+            color: $white;
+            font-size: 17px;
+        }
+    }
 }

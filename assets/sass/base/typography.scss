@@ -2,6 +2,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.card__precio {
+    color: $white;
+    @include x-large
+}
+
 .texto__footer {
     color: $white;
     @include x-small 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +6,11 @@ body {
 
 body {
   font-family: 'Raleway', sans-serif; }
+
+.card__precio {
+  color: #FFF;
+  font-size: 1.875rem;
+  font-weight: 700; }
 
 .texto__footer {
   color: #FFF;
@@ -202,7 +208,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 300px; }
+  height: 300px;
+  margin-right: 0; }
 
 @media (min-width: 576px) {
   .header__imagen {
@@ -228,13 +235,91 @@ footer {
     margin: 0;
     padding: 10px; }
 
-.precios__fondo {
-  background-image: url(../img/bg-price.png);
-  background-position: center;
-  background-repeat: no-repeat;
+/*cajas Cartas*/
+.card__imagen {
+  background-image: url(../img/bg-price.svg);
   background-size: cover;
-  width: 100vw;
-  height: 500px; }
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0; }
+
+.card__fondo {
+  background-color: #333745;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  margin: 0;
+  font-size: x-l; }
+
+.card-price {
+  text-align: center;
+  color: #221D23; }
+
+.card-title {
+  text-align: center;
+  color: #726F73; }
+
+.card__precio {
+  color: #FFF;
+  text-align: center; }
+
+.card {
+  background: #FFF;
+  box-shadow: 0 1px 1px #221D23;
+  flex: 1;
+  margin: 20px 60px;
+  padding: 30px;
+  position: relative;
+  text-align: left;
+  width: 300px; }
+  .card.popular {
+    margin-top: -10px;
+    margin-bottom: -10px; }
+    .card.popular .card-action button {
+      background-color:   #2AB7CA;
+      color: #FFF;
+      font-size: 17px;
+      margin-top: -15px;
+      padding: 15px;
+      height: 80px; }
+      .card.popular .card-action button:hover {
+        background-color: #249cac;
+        font-size: 23px; }
+  .card:hover {
+    box-shadow: 0 8px 20px #221D23; }
+
+.card-description ul {
+  display: block;
+  margin: 20px 0;
+  padding-left: 20px;
+  padding-bottom: 30px; }
+.card-description li {
+  color: #221D23;
+  font-size: 15px;
+  margin: 0 0 15px; }
+
+.card-action button {
+  position: absolute;
+  bottom: 20px;
+  background: transparent;
+  border: 2px solid #2AB7CA;
+  color: #2AB7CA;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  width: 80%;
+  height: 60px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out; }
+  .card-action button:hover {
+    background-color: #2AB7CA;
+    box-shadow: 0 2px 4px #186b76;
+    color: #FFF;
+    font-size: 17px; }
 
 .animation-element {
   opacity: 0;
@@ -246,102 +331,5 @@ footer {
 .animation-element.in-view {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px); }
-
-.wrapper-card {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 40px auto;
-  width: 77%; }
-
-.card {
-  background: #FFF;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-  flex: 1;
-  margin: 8px;
-  padding: 30px;
-  position: relative;
-  text-align: center;
-  transition: all 0.5s ease-in-out; }
-  .card.popular {
-    margin-top: -10px;
-    margin-bottom: -10px; }
-    .card.popular .card-title h3 {
-      color: #3498db;
-      font-size: 22px; }
-    .card.popular .card-price {
-      margin: 50px; }
-      .card.popular .card-price h1 {
-        color: #3498db;
-        font-size: 60px; }
-    .card.popular .card-action button {
-      background-color: #3498db;
-      border-radius: 80px;
-      color: #fff;
-      font-size: 17px;
-      margin-top: -15px;
-      padding: 15px;
-      height: 80px; }
-      .card.popular .card-action button:hover {
-        background-color: #2386c8;
-        font-size: 23px; }
-  .card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
-
-.card-title h3 {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 15px;
-  text-transform: uppercase; }
-.card-title h4 {
-  color: rgba(0, 0, 0, 0.6); }
-
-.card-price {
-  margin: 60px 0; }
-  .card-price h1 {
-    font-size: 46px; }
-    .card-price h1 sup {
-      font-size: 15px;
-      display: inline-block;
-      margin-left: -20px;
-      width: 10px; }
-    .card-price h1 small {
-      color: rgba(0, 0, 0, 0.3);
-      display: block;
-      font-size: 11px;
-      text-transform: uppercase; }
-
-.card-description ul {
-  display: block;
-  list-style: none;
-  margin: 60px 0;
-  padding: 0; }
-.card-description li {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 15px;
-  margin: 0 0 15px; }
-  .card-description li::before {
-    font-family: FontAwesome;
-    content: "\f00c";
-    padding: 0 5px 0 0;
-    color: rgba(0, 0, 0, 0.15); }
-
-.card-action button {
-  background: transparent;
-  border: 2px solid #3498db;
-  color: #3498db;
-  cursor: pointer;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  width: 100%;
-  height: 60px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out; }
-  .card-action button:hover {
-    background-color: #3498db;
-    box-shadow: 0 2px 4px #196090;
-    color: #fff;
-    font-size: 17px; }
 
 /*# sourceMappingURL=style.css.map */
