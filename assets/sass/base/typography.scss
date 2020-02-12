@@ -2,6 +2,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.navbar__item {
+    @include small
+}
+
 .header__titulo {
     @include xxxxx-large
 }

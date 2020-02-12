@@ -7,6 +7,10 @@ body {
 body {
   font-family: 'Raleway', sans-serif; }
 
+.navbar__item {
+  font-size: 0.875rem;
+  font-weight: 400; }
+
 .header__titulo {
   font-size: 3.125rem;
   font-weight: 700; }
@@ -339,6 +343,7 @@ h2 {
     font-size: 17px; }
 
 .caracteristicas__titulo {
+  padding-top: 100px;
   padding-bottom: 30px; }
 .caracteristicas__imagen {
   padding-right: 30px;
