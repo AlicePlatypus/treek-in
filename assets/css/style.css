@@ -375,4 +375,10 @@ h2 {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px); }
 
+.navbar__boton {
+  width: 80px;
+  height: 20px;
+  color: #FFF;
+  background-color: #2AB7CA; }
+
 /*# sourceMappingURL=style.css.map */
