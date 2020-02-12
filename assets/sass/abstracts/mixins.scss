@@ -37,7 +37,8 @@
 
 @mixin medium {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 2rem;
 }
 
 @mixin small {

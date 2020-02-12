@@ -13,14 +13,10 @@
     &__imagen {
 
         background-image: url(../img/bg-hero.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        background-position: top right;
         background-size: cover;
         width: 100vw;
-        height: 300px;
-        margin-right: 0;
-    
-        
+        height: 390px;
     }
 
 }
@@ -30,7 +26,9 @@
     .header__imagen {
         width: 100vw;
         height: 500px;
+        background-position: center;
 
     }
+
 }
 

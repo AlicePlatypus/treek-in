@@ -6,6 +6,10 @@ body {
     @include xxxxx-large
 }
 
+.header__parrafo, .caracteristicas__texto-parrafo {
+    @include medium
+}
+
 .caracteristicas__titulo {
     color: $raising-black;
     text-align: center;
@@ -13,6 +17,9 @@ body {
     
 }
 
+.caracteristicas__texto-titulo {
+    @include large   
+}
 
 .card__precio {
     color: $white;

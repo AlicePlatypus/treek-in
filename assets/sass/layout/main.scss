@@ -4,22 +4,24 @@
         padding-bottom: 30px;
     }
 
-    &__imagen {
-    padding-right: 30px;
-    padding-left: 100px;
-
-    &__texto {
-        padding-right: 100px;
-        margin: 20px;
+    &__texto, &__imagen {
+        padding-left: 100px;
     }
 
-}
+    &__texto {
+        width: 300px;
+    }
 
 }
 
 @media (min-width: 576px) {
     .caracteristicas__imagen{
         padding-left: 250px;
+        
+    }
+
+    .caracteristicas__texto {
+        padding-left: 30px;
     }
 }
 
